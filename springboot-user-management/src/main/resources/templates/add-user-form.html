@@ -23,6 +23,13 @@
 				
 				<input type="text" th:field="*{email}" class="form-control col-4 mb-4" placeholder="Enter email" />
 				
+				<select id="role" required th:field="*{role}">
+            		<option value="">Select a role</option>
+            		<option value="GUEST">GUEST</option>
+            		<option value="USER">USER</option>
+            		<option value="ADMIN">ADMIN</option>
+        	    </select>
+				
 				<button type="submit" class="btn btn-primary col-2">Save</button>
 				<input type="hidden" th:field="*{id}" />
 			</form>
